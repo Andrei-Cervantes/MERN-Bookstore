@@ -9,6 +9,9 @@ const app = express();
 // Middleware for parsing request body
 app.use(express.json());
 
+// Middleware for handling CORS Policy
+
+
 app.get('/', (request, response) => {
     console.log(request);
     return response.status(234).send('Welcome to MERN Stack Tutorial');
